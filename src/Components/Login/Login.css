@@ -1,0 +1,104 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  /* Center horizontally and add some margin */
+  width: 80%;
+  /* Set a base width */
+  max-width: 400px;
+  /* Limit width on larger screens */
+  padding: 20px;
+  border: 1px solid #ddd;
+  /* Optional border */
+  border-radius: 5px;
+  /* Optional rounded corners */
+  background-color: #f5f5f5;
+  /* Optional background color */
+
+}
+
+.main-container h1 {
+  font-size: 2rem;
+  /* Adjust heading size for better scaling */
+  margin-bottom: 20px;
+  /* Add space after heading */
+}
+
+.main-container input[type="text"] {
+  width: 90%;
+  /* Make inputs full width */
+  padding: 10px 15px;
+  /* Adjust padding for better touch targets */
+  margin-bottom: 10px;
+  /* Add space between inputs */
+  border: 1px solid #ccc;
+  /* Optional border for inputs */
+  border-radius: 3px;
+  /* Optional rounded corners for inputs */
+}
+
+.main-container button {
+  width: 100%;
+  /* Make buttons full width */
+  padding: 10px 15px;
+  /* Adjust padding for better touch targets */
+  margin-top: 10px;
+  /* Add space above button */
+  border: none;
+  /* Remove default button border */
+  border-radius: 3px;
+  /* Optional rounded corners for buttons */
+  cursor: pointer;
+  /* Indicate clickable element */
+  background-color: #3498db;
+  /* Set button background color */
+  color: white;
+  /* Set button text color */
+  font-weight: bold;
+  /* Make button text bold */
+}
+
+/* Hide logout button initially (assuming it's only visible after login) */
+/* .logoutBtn {
+  display: none;
+} */
+
+.isAuth .logoutBtn {
+  display: block;
+  /* Show logout button when logged in */
+}
+
+.center-info {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.home-div {
+  text-align: center;
+  /* Center text horizontally */
+  margin: 20px auto;
+  /* Add margin and center horizontally */
+  width: 80%;
+  /* Set a base width */
+  max-width: 400px;
+  /* Limit width on larger screens */
+  padding: 20px;
+  /* Add some padding */
+}
+
+.home-div h1 {
+  font-size: 1.5rem;
+  /* Adjust font size for better scaling */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .home-div {
+    font-size: 1.2rem;
+    /* Adjust font size for smaller screens */
+  }
+}

@@ -1,0 +1,59 @@
+.main-div {
+  margin: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  /* Adjust margin for smaller screens */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  /* Adjust gap for smaller screens */
+  justify-content: space-around;
+
+  /* Change layout for smaller screens */
+  @media (max-width: 768px) {
+    flex-direction: column;
+    margin: 20px;
+    /* Stack elements vertically */
+    gap: 20px;
+    /* Adjust gap for smaller layout */
+  }
+}
+
+.page {
+  display: flex;
+  flex-direction: row;
+  /* Change to column for better readability on small screens */
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0px;
+  /* Adjust margin for smaller screens */
+  gap: 20px;
+  /* Adjust gap for smaller layout */
+
+  /* Change layout back to row on larger screens */
+  @media (min-width: 768px) {
+    flex-direction: row;
+    /* Revert to original layout */
+  }
+}
+
+.page button {
+  border: 1px solid black;
+
+  /* Adjust button styles for smaller screens (optional) */
+  @media (max-width: 768px) {
+    padding: 8px 12px;
+    /* Adjust padding for smaller buttons */
+    font-size: 14px;
+    /* Adjust font size for better readability */
+  }
+}
+
+.center-info {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

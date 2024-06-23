@@ -1,0 +1,25 @@
+.home-div {
+  text-align: center;
+  /* Center text horizontally */
+  margin: 20px auto;
+  /* Add margin and center horizontally */
+  width: 80%;
+  /* Set a base width */
+  max-width: 400px;
+  /* Limit width on larger screens */
+  padding: 20px;
+  /* Add some padding */
+}
+
+.home-div h1 {
+  font-size: 1.5rem;
+  /* Adjust font size for better scaling */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .home-div {
+    font-size: 1.2rem;
+    /* Adjust font size for smaller screens */
+  }
+}

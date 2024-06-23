@@ -1,0 +1,88 @@
+.main {
+  width: 300px;
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(238, 174, 202);
+  background: linear-gradient(180deg, rgba(238, 174, 202, 1) 1%, rgba(148, 187, 233, 1) 100%);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  /* margin: 0 auto; */
+  height: 420px;
+}
+
+.user-img {
+  width: 250px;
+  /* height: 250px; */
+  margin: 15px 0px;
+}
+
+.user-img img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.main:hover {
+  transform: scale(1.05);
+  transition: 0.6s ease;
+}
+
+.user-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+
+.button {
+  background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+  margin-bottom: 10px;
+}
+
+.main {
+  width: 80%;
+  /* Use percentage for responsive width */
+  /* Other styles remain the same */
+  max-width: 350px;
+  /* Set a maximum width for smaller screens */
+  margin: 0 auto;
+  /* Center the element horizontally on all screens */
+}
+
+/* Media queries for different screen sizes */
+@media (max-width: 768px) {
+  .user-img {
+    width: 70%;
+    /* Adjust image width for smaller screens */
+  }
+
+  .user-name {
+    font-size: 18px;
+    /* Adjust font size for better readability */
+  }
+
+  .button {
+    font-size: 14px;
+    /* Adjust button font size */
+    padding: 6px 12px;
+    /* Adjust button padding */
+  }
+}
